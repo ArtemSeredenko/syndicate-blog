@@ -53,7 +53,7 @@ body {
   background: url(../img/bg.jpg);
   background-size: cover;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -153,6 +153,8 @@ body {
 
 /* #endregion */
 
+/* #region Hero post Mobile */
+
 @media (max-width: 480px) {
   .blog__hero-shadow {
     background: linear-gradient(1deg, #131313 18.25%, rgba(0, 0, 0, 0) 112.11%);
@@ -196,3 +198,5 @@ body {
     display: none;
   }
 }
+
+/* #endregion */
