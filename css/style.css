@@ -2,7 +2,7 @@
   /* colors */
   --grafit: #232428;
   /* sizes */
-  --card-width: 380px;
+  --card-width: 378px;
   --card-height: 500px;
 }
 
@@ -368,6 +368,16 @@ body {
 
 .cards-item5 {
   height: 386px;
+}
+
+.cards-link {
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.cards-link:hover {
+  border-color: orange;
 }
 
 /* #endregion */
