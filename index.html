@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Page</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com" />
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main class="wrapper">
@@ -30,13 +31,61 @@
             <div class="hero__meta">
               <div class="calendar">
                 <img src="./img/Calendar.svg" alt="calendar icon" />
-                <p class="meta-txt">Nov 28, 2023</p>
+                <p class="meta-txt">
+                  <a href="#" class="a-hover">Nov 28, 2023</a>
+                </p>
               </div>
               <div class="views">
                 <img src="./img/Eye.svg" alt="Eye icon" />
                 <p class="meta-txt">3652 views</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="blog__cards">
+          <div class="blog__cards-river">
+            <div class="cards-item1 cards-item">1</div>
+            <div class="cards-item2 cards-item">2</div>
+            <div class="cards-item6 cards-item">6</div>
+            <div class="cards-item7 cards-item">7</div>
+          </div>
+          <div class="sidebar">
+            <div class="subscribe-card cards-item">
+              <h2 class="subscribe-card-title">Subscribe & Follow</h2>
+              <div class="subscribe-card-hr"></div>
+              <div class="subscribe-icons">
+                <a href="#"
+                  ><img
+                    src="./img/social/fb.svg"
+                    alt="Facebook logo"
+                    class="subscribe-icons-img" /></a
+                ><a href="#"
+                  ><img
+                    src="./img/social/yt.svg"
+                    alt="Youtube logo"
+                    class="subscribe-icons-img" /></a
+                ><a href="#"
+                  ><img
+                    src="./img/social/inst.png"
+                    alt="Instagram logo"
+                    class="subscribe-icons-img" /></a
+                ><a href="#"
+                  ><img
+                    src="./img/social/discord.png"
+                    alt="Discord logo"
+                    class="subscribe-icons-img"
+                /></a>
+              </div>
+            </div>
+            <div class="cards-item4 cards-item">4</div>
+            <div class="cards-item5 cards-item">5</div>
+          </div>
+        </div>
+        <div class="blog__cards">
+          <div class="blog__cards-river">
+            <div class="cards-item8 cards-item">8</div>
+            <div class="cards-item9 cards-item">9</div>
+            <div class="cards-item10 cards-item">10</div>
           </div>
         </div>
       </section>

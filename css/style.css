@@ -1,4 +1,13 @@
-/* reset */
+:root {
+  /* colors */
+  --grafit: #232428;
+  /* sizes */
+  --card-width: 380px;
+  --card-height: 500px;
+}
+
+/* #region reset */
+
 *,
 *::after,
 *::before {
@@ -8,6 +17,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   line-height: normal;
+  font-display: swap;
 }
 
 a {
@@ -47,10 +57,12 @@ body {
   background: rgba(0, 0, 0, 0.64);
 }
 
+/* #endregion */
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  background: url(../img/bg.jpg);
+  background: url(../img/bg2.jpg);
   background-size: cover;
   display: flex;
   /* align-items: center; */
@@ -68,10 +80,10 @@ body {
   margin: 20px 5%;
 }
 
-/* #region Hero post Desctop */
+/* #region =======HERO POST Desktop======= */
 
 .blog__hero {
-  background-image: url(../img/post-hero.jpg);
+  background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   width: 100%;
   max-width: 1200px;
@@ -82,9 +94,12 @@ body {
 }
 
 .hero__category a {
-  color: #1b9073;
+  color: #22b893;
   font-size: 12px;
   font-weight: 500;
+  border: 1px solid #22b893;
+  padding: 3px;
+  border-radius: 2px;
 }
 
 .hero__category:hover a {
@@ -93,7 +108,7 @@ body {
 
 .hero__category {
   padding-bottom: 8px;
-  padding-top: 170px;
+  padding-top: 160px;
 }
 
 .hero__title {
@@ -128,15 +143,23 @@ body {
   cursor: pointer;
 }
 
-.hero__btn:hover {
+.hero__btn:hover,
+.hero__btn:focus {
   color: white;
   border-color: white;
+  transition: 0.5s;
 }
 
-.meta-txt {
+.meta-txt,
+.meta-txt > a {
   color: #c0c4d0;
   font-size: 12px;
   font-weight: 600;
+}
+
+.a-hover:hover,
+.a-hover:focus {
+  color: white;
 }
 
 .calendar,
@@ -154,7 +177,7 @@ body {
 
 /* #endregion */
 
-/* #region Hero post Mobile 480 */
+/* #region =======HERO POST Mobile 480======= */
 
 @media (max-width: 480px) {
   .blog__hero-shadow {
@@ -172,7 +195,7 @@ body {
 
   .blog__hero {
     display: flex;
-    background: url(../img/post-hero-mobile.jpg);
+    background: url(../img/hero-bg_mob.jpg);
     flex-direction: column;
     justify-content: center;
     padding: 0 10px;
@@ -208,7 +231,7 @@ body {
 
 /* #endregion */
 
-/* #region Hero post Tablet 795 */
+/* #region =======HERO POST Tablet 795======= */
 
 @media (max-width: 795px) {
   .blog__hero-shadow {
@@ -226,7 +249,7 @@ body {
 
   .blog__hero {
     display: flex;
-    background: url(../img/post-hero-mobile.jpg);
+    background: url(../img/hero-bg_mob.jpg);
     flex-direction: column;
     justify-content: center;
     padding: 0 10px;
@@ -261,6 +284,90 @@ body {
   .hero__category {
     display: none;
   }
+}
+
+/* #endregion */
+
+/* #region  =======BLOG CARDS MAIN======= */
+
+.blog__cards {
+  display: flex;
+  margin-top: 30px;
+}
+
+.cards-item {
+  width: var(--card-width);
+  height: var(--card-height);
+  background: #828a9e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.609);
+}
+
+.blog__cards-river {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* #endregion */
+
+/* #region =======SIDEBAR======= */
+
+.sidebar {
+  display: flex;
+  gap: 30px;
+  width: 380px;
+  flex-direction: column;
+  position: sticky;
+}
+
+/* #endregion */
+
+/* #region ========SUBSCRIBE CARD======= */
+
+.subscribe-card {
+  height: 190px;
+  background-color: var(--grafit);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-card-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.subscribe-card-hr {
+  width: 50px;
+  height: 2px;
+  background: #4e505f;
+  margin-bottom: 20px;
+}
+
+.subscribe-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.subscribe-icons-img:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.609);
+}
+
+.cards-item4 {
+  height: 394px;
+  background-color: #616161;
+}
+
+.cards-item5 {
+  height: 386px;
 }
 
 /* #endregion */
