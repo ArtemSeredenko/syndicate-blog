@@ -16,19 +16,20 @@
   <body>
     <main class="wrapper">
       <section class="blog">
+        <!-- Hero post -->
         <div class="blog__hero">
           <div class="blog__hero-shadow">
-            <p class="hero__category"><a href="#">Code</a></p>
-            <h1 class="hero__title">
+            <p class="blog__hero-category"><a href="#">Code</a></p>
+            <h1 class="blog__hero-title">
               Оценка Кода одним взглядом: Мифы и Реальность в C# Unity 2023
             </h1>
-            <p class="hero__subtitle">
+            <p class="blog__hero-subtitle">
               Разбор возможности оценки качества кода на первый взгляд и анализ
               цикломатической сложности в C# Unity 2023 для улучшения поддержки
               и читаемости
             </p>
-            <button type="button" class="hero__btn">Read More</button>
-            <div class="hero__meta">
+            <button type="button" class="blog__hero-btn">Read More</button>
+            <div class="blog__hero-meta">
               <div class="calendar">
                 <img src="./img/Calendar.svg" alt="calendar icon" />
                 <p class="meta-txt">
@@ -42,10 +43,11 @@
             </div>
           </div>
         </div>
+        <!-- =========blog cards========= -->
         <div class="blog__cards">
           <div class="blog__cards-river">
-            <a href="#" class="cards-link">
-              <div class="cards-item1 cards-item">
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
                 <img src="./img/card1.jpg" alt="img" width="378" />
 
                 <div class="card-meta-head">
@@ -72,8 +74,8 @@
                 <div class="card-hr"></div>
               </div>
             </a>
-            <a href="#" class="cards-link">
-              <div class="cards-item1 cards-item">
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
                 <img src="./img/card2.jpg" alt="img" width="378" />
 
                 <div class="card-meta-head">
@@ -100,13 +102,64 @@
                 <div class="card-hr"></div>
               </div>
             </a>
-            <a href="#" class="cards-link">
-              <div class="cards-item6 cards-item">6</div>
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
+                <img src="./img/card3.jpg" alt="img" width="378" />
+
+                <div class="card-meta-head">
+                  <div class="card-meta-info">
+                    <div class="card-meta">
+                      <img src="./img/Calendar.svg" alt="calendar icon" />
+                      <p class="card-meta-text">Nov 28, 2023</p>
+                    </div>
+                    <div class="card-view">
+                      <img src="./img/Eye.svg" alt="Eye icon" />
+                      <p class="card-view-text">3652 views</p>
+                    </div>
+                  </div>
+                  <div class="blog-category">Tools</div>
+                </div>
+
+                <h2 class="card-title">Майнд-карты в Геймдеве</h2>
+                <p class="card-text">
+                  Исследуем применение майнд-карт в разработке игр: от
+                  организации идей до улучшения командной работы. Обсуждаем, как
+                  майнд-карты помогают в брейншторминге, визуализации сложных
+                  систем...
+                </p>
+                <div class="card-hr"></div>
+              </div>
             </a>
-            <a href="#" class="cards-link">
-              <div class="cards-item7 cards-item">7</div>
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
+                <img src="./img/card4.jpg" alt="img" width="378" />
+
+                <div class="card-meta-head">
+                  <div class="card-meta-info">
+                    <div class="card-meta">
+                      <img src="./img/Calendar.svg" alt="calendar icon" />
+                      <p class="card-meta-text">Nov 28, 2023</p>
+                    </div>
+                    <div class="card-view">
+                      <img src="./img/Eye.svg" alt="Eye icon" />
+                      <p class="card-view-text">3652 views</p>
+                    </div>
+                  </div>
+                  <div class="blog-category">Tools</div>
+                </div>
+
+                <h2 class="card-title">Майнд-карты в Геймдеве</h2>
+                <p class="card-text">
+                  Исследуем применение майнд-карт в разработке игр: от
+                  организации идей до улучшения командной работы. Обсуждаем, как
+                  майнд-карты помогают в брейншторминге, визуализации сложных
+                  систем...
+                </p>
+                <div class="card-hr"></div>
+              </div>
             </a>
           </div>
+          <!-- ========Sidebar======= -->
           <div class="sidebar">
             <div class="subscribe-card cards-item">
               <h2 class="subscribe-card-title">Subscribe & Follow</h2>
@@ -135,20 +188,114 @@
                 /></a>
               </div>
             </div>
-            <div class="cards-item4 cards-item">4</div>
+
+            <!-- ======NEWSLETTER CARD====== -->
+            <div class="newsletter-card cards-item">
+              <h2 class="newsletter-card__title">Newsletter</h2>
+              <div class="subscribe-card-hr"></div>
+              <h3 class="newsletter-card__subtitle">Get interesting News</h3>
+              <p class="newsletter-card__slogan">
+                Receive the latest news via email.
+              </p>
+              <input
+                type="email"
+                class="newsletter-card__input"
+                placeholder="E-mail"
+              />
+              <button type="button" class="newsletter-card__btn">
+                Subscribe
+              </button>
+            </div>
+
+            <!-- End -->
             <div class="cards-item5 cards-item">5</div>
           </div>
         </div>
         <div class="blog__cards">
           <div class="blog__cards-river">
-            <a href="#" class="cards-link">
-              <div class="cards-item8 cards-item">8</div>
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
+                <img src="./img/card5.jpg" alt="img" width="378" />
+
+                <div class="card-meta-head">
+                  <div class="card-meta-info">
+                    <div class="card-meta">
+                      <img src="./img/Calendar.svg" alt="calendar icon" />
+                      <p class="card-meta-text">Nov 28, 2023</p>
+                    </div>
+                    <div class="card-view">
+                      <img src="./img/Eye.svg" alt="Eye icon" />
+                      <p class="card-view-text">3652 views</p>
+                    </div>
+                  </div>
+                  <div class="blog-category">Tools</div>
+                </div>
+
+                <h2 class="card-title">Майнд-карты в Геймдеве</h2>
+                <p class="card-text">
+                  Исследуем применение майнд-карт в разработке игр: от
+                  организации идей до улучшения командной работы. Обсуждаем, как
+                  майнд-карты помогают в брейншторминге, визуализации сложных
+                  систем...
+                </p>
+                <div class="card-hr"></div>
+              </div>
             </a>
-            <a href="#" class="cards-link">
-              <div class="cards-item9 cards-item">9</div>
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
+                <img src="./img/card6.jpg" alt="img" width="378" />
+
+                <div class="card-meta-head">
+                  <div class="card-meta-info">
+                    <div class="card-meta">
+                      <img src="./img/Calendar.svg" alt="calendar icon" />
+                      <p class="card-meta-text">Nov 28, 2023</p>
+                    </div>
+                    <div class="card-view">
+                      <img src="./img/Eye.svg" alt="Eye icon" />
+                      <p class="card-view-text">3652 views</p>
+                    </div>
+                  </div>
+                  <div class="blog-category">Tools</div>
+                </div>
+
+                <h2 class="card-title">Майнд-карты в Геймдеве</h2>
+                <p class="card-text">
+                  Исследуем применение майнд-карт в разработке игр: от
+                  организации идей до улучшения командной работы. Обсуждаем, как
+                  майнд-карты помогают в брейншторминге, визуализации сложных
+                  систем...
+                </p>
+                <div class="card-hr"></div>
+              </div>
             </a>
-            <a href="#" class="cards-link">
-              <div class="cards-item10 cards-item">10</div>
+            <a href="#" class="blog__cards-link">
+              <div class="first-card cards-item">
+                <img src="./img/card7.jpg" alt="img" width="378" />
+
+                <div class="card-meta-head">
+                  <div class="card-meta-info">
+                    <div class="card-meta">
+                      <img src="./img/Calendar.svg" alt="calendar icon" />
+                      <p class="card-meta-text">Nov 28, 2023</p>
+                    </div>
+                    <div class="card-view">
+                      <img src="./img/Eye.svg" alt="Eye icon" />
+                      <p class="card-view-text">3652 views</p>
+                    </div>
+                  </div>
+                  <div class="blog-category">Tools</div>
+                </div>
+
+                <h2 class="card-title">Майнд-карты в Геймдеве</h2>
+                <p class="card-text">
+                  Исследуем применение майнд-карт в разработке игр: от
+                  организации идей до улучшения командной работы. Обсуждаем, как
+                  майнд-карты помогают в брейншторминге, визуализации сложных
+                  систем...
+                </p>
+                <div class="card-hr"></div>
+              </div>
             </a>
           </div>
         </div>
