@@ -336,6 +336,11 @@ body {
   position: sticky;
 }
 
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
 /* #endregion */
 
 /* #region ========SUBSCRIBE CARD======= */
@@ -528,7 +533,7 @@ body {
 
 /* #endregion */
 .ad__card {
-  height: auto;
+  height: 387px;
   display: flex;
   flex-direction: column;
   background: none;
