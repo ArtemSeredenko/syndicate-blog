@@ -100,17 +100,18 @@ body {
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.4);
 }
 
-.blog__hero-category a {
+.blog__hero-category-link {
   color: #22b893;
   font-size: 12px;
   font-weight: 500;
   border: 1px solid #22b893;
   padding: 3px;
   border-radius: 2px;
+  transition: 0.5s;
 }
 
-.blog__hero-category:hover a {
-  font-weight: 600;
+.blog__hero-category-link:hover {
+  border: 1px solid #c3f1e6;
 }
 
 .blog__hero-category {
@@ -148,6 +149,7 @@ body {
   background: none;
   margin-bottom: 44px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .blog__hero-btn:hover,
@@ -368,13 +370,23 @@ body {
   gap: 12px;
 }
 
+.subscribe-icons-img {
+  transition: 0.3s;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0);
+}
+
 .subscribe-icons-img:hover {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.609);
 }
 
+/* #endregion */
+
+/* #region ========FIRST CARD======= */
+
 .blog__cards-link {
   box-sizing: border-box;
   border: 1px solid transparent;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0);
   transition: 0.3s;
 }
 
@@ -383,9 +395,6 @@ body {
   box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.609);
 }
 
-/* #endregion */
-
-/* #region ========FIRST CARD======= */
 .first-card {
   display: flex;
   flex-direction: column;
