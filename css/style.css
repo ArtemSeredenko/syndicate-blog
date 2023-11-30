@@ -3,12 +3,14 @@
   --grafit: #232428;
   --color-gray: #4e505f;
   --txt-grey-extra-light: #c0c4d0;
-  --txt-gray-light: #828a9e;
+  --txt-gray-light: #949db4;
   --Turkioce: #1b9073;
   --gray-dark: #2c2f36;
   /* sizes */
   --card-width: 378px;
   --card-height: 500px;
+  /* Shadow */
+  --box-shadow-06: 0px 10px 50px 0px rgba(0, 0, 0, 0.609);
 }
 
 /* #region reset */
@@ -370,10 +372,6 @@ body {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.609);
 }
 
-.cards-item5 {
-  height: 386px;
-}
-
 .blog__cards-link {
   box-sizing: border-box;
   border: 1px solid transparent;
@@ -439,7 +437,7 @@ body {
 }
 
 .card-text {
-  color: var(--txt-gray-light, #828a9e);
+  color: var(--txt-grey-extra-light);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -462,7 +460,7 @@ body {
   background-color: var(--grafit);
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.609);
+  box-shadow: var(--box-shadow-06);
 }
 
 .newsletter-card__title {
@@ -508,15 +506,38 @@ body {
   height: 50px;
   background-color: var(--gray-dark);
   color: #fff;
-}
-
-.newsletter-card__btn:focus {
-  background-color: var(--txt-gray-light);
+  border: 1px solid transparent;
+  transition: 0.6s;
 }
 
 .newsletter-card__btn:hover {
   border: 1px solid var(--txt-grey-extra-light);
   cursor: pointer;
 }
+.newsletter-card__btn:focus {
+  background-color: var(--txt-gray-light);
+}
 
 /* #endregion */
+.ad__card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+
+.ad__card-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ad__card-text {
+  color: var(--txt-grey-extra-light);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 52px;
+}
